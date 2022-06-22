@@ -16,3 +16,6 @@ rim add release
 pip3 install -U radian
 R -e 'pak::pkg_install(c("devtools", "languageserver"))'
 R -e 'if (file.exists("DESCRIPTION")) remotes::install_local(dependencies = TRUE, force = TRUE)'
+# disable rgl
+# options(rgl.useNULL=TRUE)
+# ref: https://stackoverflow.com/questions/68517734/how-to-install-the-rgl-package-in-macos-big-sur
