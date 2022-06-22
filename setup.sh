@@ -15,4 +15,4 @@ rim add release
 
 pip3 install -U radian
 R -e 'pak::pkg_install(c("devtools", "languageserver"))'
-R -e 'if (file.exists("DESCRIPTION")) pak::pkg_install(".")'
+R -e 'if (file.exists("DESCRIPTION")) remotes::install_local(dependencies = TRUE, force = TRUE)'
