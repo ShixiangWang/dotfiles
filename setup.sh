@@ -14,7 +14,7 @@ curl -Ls https://github.com/gaborcsardi/rim/releases/download/v0.3.0/rim-linux-0
 rim add release
 
 pip3 install -U radian
-R -e 'pak::pkg_install(c("devtools", "languageserver"))'
+R -e 'pak::pkg_install(c("devtools", "languageserver", "pkgdown"))'
 R -e 'if (file.exists("DESCRIPTION")) remotes::install_local(dependencies = TRUE, force = TRUE)'
 # disable rgl
 # options(rgl.useNULL=TRUE)
