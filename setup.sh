@@ -4,7 +4,7 @@
 # ------------------------------
 # Set up R devtools environment
 # ------------------------------
-sudo apt install libxml2 -y
+sudo apt install libxml2 pandoc -y
 
 # https://github.com/r-lib/rig
 # works for debian releases
