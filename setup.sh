@@ -8,10 +8,10 @@ sudo apt install libxml2 pandoc -y
 
 # https://github.com/r-lib/rig
 # works for debian releases
-curl -Ls https://github.com/gaborcsardi/rim/releases/download/v0.3.0/rim-linux-0.3.0.tar.gz |
+curl -Ls https://github.com/r-lib/rig/releases/download/latest/rig-linux-latest.tar.gz |
   sudo tar xz -C /usr/local
 
-rim add release
+rig add release
 
 pip3 install -U radian
 R -e 'pak::pkg_install(c("devtools", "languageserver", "pkgdown"))'
